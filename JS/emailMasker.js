@@ -1,10 +1,11 @@
 const maskEmail = (email) => { // arrow function from es6
     let atIndex = email.indexOf('@'); // find the point you want to separate
     let firstletter = email[0]; // you need to let the first char clear
+    let lastLetter = email[atIndex - 1] // keep the last one
     let clearSection = email.slice(atIndex); // to extract the domain , you can use let domain = email.substring(atIndex); // Also extracts "@gmail.com"
 
     let masked = '*'.repeat(atIndex - 1); //to repeat x time the * from 1 to the indexOf choosen ( 7 for me )
-    return firstletter + masked + clearSection; // concanate 
+    return firstletter + masked + lastLetter + clearSection; // concanate 
   
   
   }
