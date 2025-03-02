@@ -1,18 +1,19 @@
-let year = 2024
-let year2 = 2025;
+const readline = require('readline');
 
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-const isLeapYear = (n) => {
-  if (n % 4 == 0 && n % 100 != 0 && n % 400 != 0) {
-    return `${n} is a leap year.`;
-  }
-  else {
-    return `${n} is not a leap year.`;
-  }
-}
+rl.question("Enter a year: ", (year) => {
+    year = Number(year); // Convert input to a number
 
-let result = isLeapYear(year);
-let result2 = isLeapYear(year2);
+    // Check if it's a leap year
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        console.log(`${year} is a leap year! 🎉`);
+    } else {
+        console.log(`${year} is NOT a leap year.`);
+    }
 
-console.log(result);
-console.log(result2);
+    rl.close(); // Close input stream
+});
