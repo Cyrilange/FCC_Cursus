@@ -49,12 +49,17 @@ const getAverage = (test) => {
     }
     console.clear();
     console.log("\x1b[36m")
+    console.log("####################################################")
     console.log("Antoinio")
     console.log(studentMsg([76, 45, 98, 23, 67], 91))
+    console.log("####################################################")
     console.log("Erika")
     console.log(studentMsg([76, 45, 98, 23, 67], 61))
+    console.log("####################################################")
     console.log("Marta")
     console.log(studentMsg([76, 45, 98, 23, 67], 100))
+    console.log("####################################################")
     console.log("Pedro")
     console.log(studentMsg([76, 45, 98, 23, 67], 49))
+    console.log("####################################################")
     console.log("\x1b[0m")
