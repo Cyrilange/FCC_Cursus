@@ -19,3 +19,6 @@ noun2 = "armor"
 const secondStory = "Once upon a time, there was a(n) " + adjective + " " + noun + " who loved to eat " + noun2 + ". The " + noun + " lived in a " + place + " and had " + adjective2 + " nostrils that blew fire when it was " + verb + "."
 
 console.log("\nSecond story: " + secondStory)
+
+const third = `I swa a ${adjective} ${noun} who loved to eat ${noun2}. The ${noun} lived in a ${place} and had ${adjective2} nostrils that blew fire when it was ${verb}.`
+console.log("\nThird story: " + third)
