@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    border: 1px solid brown;
+    border-radius: 5px;
+    box-shadow:0px 0px 10px 0px brown;
+    padding: 20px;
+    background-color: #fff; 
+}
+
+h1 {
+    margin: 2rem auto;
+    color: brown;
+}
+
+#char-count {
+    margin: 2rem auto;
+    color: brown;
+}
